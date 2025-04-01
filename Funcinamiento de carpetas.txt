@@ -1,0 +1,56 @@
+/html
+│── /modelos
+│   ├── usuarioModel.js
+│   ├── viajeModel.js
+│   ├── destinoModel.js
+│
+│── /vistas
+│   ├── /css
+│   │   ├── DetallesViaje
+│   │   ├── globales.css  (Estilos generales como footer, fuentes, colores)
+│   │   ├── HomeSesionTrue.css
+│   │   ├── Index.css
+│   │   ├── LoginScreen.css
+│   │   ├── output.css
+│   │   ├── SplashScreen.css
+│   │   ├── registro.css
+│   │
+│   ├── DetallesViaje.html
+│   ├── HomeSesionTrue.html
+│   ├── LoginScreen.html
+│   ├── SplashScreen.html
+│   ├── resultados.html
+│   ├── registro.html
+│   ├── perfil.html
+│
+│── /controladores
+│   ├── HomeSesionTrue.js
+│   ├── usuarioController.js
+│   ├── viajeController.js
+│   ├── destinoController.js
+│
+│── /assets
+│   ├── /imagenes
+│   ├── /iconos
+│
+│── index.html  (Podría ser el punto de entrada)
+│── app.js  (Archivo principal para la funcionalidad)
+│── router.js  (Manejo de rutas si es una SPA o con backend)
+│── README.md
+
+
+
+Explicación de la estructura
+/modelos: Contiene la lógica de datos, por ejemplo, la gestión de usuarios, viajes y destinos.
+
+/vistas: Contiene los archivos HTML y CSS, dividiéndolos por página. Cada archivo HTML tiene su propio CSS para estilos específicos, además de un archivo estilos.css con configuraciones generales.
+
+/controladores: Maneja la lógica de la aplicación y la interacción entre la vista y los modelos.
+
+/assets: Contiene imágenes e iconos usados en la web.
+
+index.html: Puede servir como punto de entrada o landing page.
+
+app.js: Archivo donde se inicializa la aplicación.
+
+router.js: Si la web usa un sistema de rutas para cargar vistas dinámicamente.

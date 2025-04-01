@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se ajusta al tipo de dispositivo -->
+    <title>Viaje-Maya</title>
+    <link rel="stylesheet" href="/vistas/css/SplashScreen.css">
+</head>
+<body>
+    <div class="splash">
+        <img src="/assets/imagenes/Imagotipo.svg" alt="Viaje-Maya"> <!-- Como se llama la imagen y su texto alternativo -->
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "LoginScreen.html"; // Al terminar redirige al Login, sino agregar al index. cambiar/quitar
+        }, 3500); // Tiempo del splash screen
+    </script>
+</body>
+</html>

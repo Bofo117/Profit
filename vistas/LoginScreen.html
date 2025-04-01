@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head> <!-- CHECAR TRANSICIÓN, SE VE CULERO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/vistas/css/output.css" rel="stylesheet"> <!-- La conexión con el TailwindCss -->
+    <link rel="stylesheet" href="/vistas/css/LoginScreen.css">
+</head>
+<body class="h-screen flex items-center justify-center bg-gradient-to-br from-[#2A6478] to-[#A9BC4B]"> <!-- Fondo -->
+    <div class="absolute inset-0 bg-cover blur-md opacity-15" style="background-image: url('Isotipo.png');"></div> <!-- Imagen de Fondo -->
+    
+    <div class="relative flex flex-col md:flex-row items-center bg-white p-8 rounded-xl shadow-xl glass w-96 md:w-[700px]"> <!-- DIV central -->
+        <!-- Imagen del formulario -->
+        <div class="hidden md:block w-1/2">
+            <img src="/assets/imagenes/ImagotipoVertical.png" alt="Imagotipo" class="rounded-xl max-w-[190px] h-auto mx-auto">
+        </div>
+        <!-- Imagen del formulario reducida -->
+        <div class="block md:hidden w-40 h-auto mx-auto mb-4">
+            <img src="/assets/imagenes/Isotipo.png" alt="Isotipo">
+        </div>
+        
+        <!-- Formulario -->
+        <div class="w-full md:w-1/2 p-6 text-white"><!-- Checar colores del formulario, no me convencen -->
+            <h2 class="text-2xl font-bold text-center mb-4">Iniciar Sesión</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-1">Correo Electrónico o Usuario</label>
+                    <input type="text" class="w-full p-3 bg-white/5 text-white placeholder-white/70 rounded-lg border border-white/50 focus:outline-none focus:ring-2 focus:ring-[#E27745]">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1">Contraseña</label>
+                    <input type="password" class="w-full p-3 bg-white/5 text-white placeholder-white/70 rounded-lg border border-white/50 focus:outline-none focus:ring-2 focus:ring-[#E27745]">
+                </div>
+                <a href="#" class="text-sm text-white hover:underline block text-right mb-4">¿Olvidaste tu contraseña?</a>
+                <button class="w-full bg-[#f9d361] text-[#2A6478] font-bold py-2 rounded-lg shadow-md hover:bg-[#FBC936]">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
